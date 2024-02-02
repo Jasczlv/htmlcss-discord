@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    border: 0;
 }
 
 menu,
@@ -18,8 +19,20 @@ a, link {
 
 /* header */
 
-.title-margintop {
+.margintop-120 {
     margin-top: 120px;
+}
+
+.margintop-50{
+    margin-top: 50px;
+}
+
+.margintop-20{
+    margin-top: 20px;
+}
+
+.marginbottom-120 {
+    margin-bottom: 120px;
 }
 
 .flex-wrap {
@@ -31,10 +44,18 @@ a, link {
     font-weight: 900;
 }
 
+.h2-fontsize{
+    font-size: 40px;
+}
+
 .bg-jumbo {
     background-image: url('../img/jumbo.png');
     background-size: cover;
     min-height: 700px;
+    color: white;
+}
+
+.color-white {
     color: white;
 }
 
@@ -65,7 +86,7 @@ nav>div.item{
 
 nav> a.item {
     line-height: 50px;
-    height: 50px;
+    min-height: 50px;
 }
 
 .item {
@@ -74,7 +95,7 @@ nav> a.item {
 
 nav> div>img {
     align-self: center;
-    height: 50px;
+    min-height: 50px;
 }
 
 .self-align {
@@ -83,6 +104,10 @@ nav> div>img {
 
 .justify-center {
     justify-content: center;
+}
+
+.max-width-300 {
+    max-width: 300px;
 }
 
 .max-width-700 {
@@ -122,12 +147,23 @@ nav> div>img {
     padding: 10px;
 }
 
+.max-width{
+    max-width: 1200px;
+}
+
 .column {
     display: flex;
     flex-direction: column;
 }
 
 .row {
+    flex-direction: row;
+    display: flex;
+    height: 100%;
+}
+
+.row-reverse {
+    flex-direction: row-reverse;
     display: flex;
     height: 100%;
 }
@@ -158,6 +194,19 @@ nav> div>img {
     align-items: center;
 }
 
+select {
+    -webkit-appearance: none;
+    background-color: transparent;
+    border: none;
+}
+
+.height-20px {
+    max-height: 20px;
+}
+
+.margin-left-5px {
+    margin-left: 5px;
+}
 
 /* utility */
 .bg-azure {
@@ -165,11 +214,11 @@ nav> div>img {
 }
 
 .bg-gray {
-    background-color: gray;
+    background-color: #f6f6f6;
 }
 
 .bg-black {
-    background-color: black;
+    background-color: #23272a;
 }
 
 .border-white {
@@ -180,28 +229,32 @@ nav> div>img {
     text-align: center;
 }
 
-/* .bg-color-orange {
-    background-color: orange;
-} */
+.button-blue {
+    background-color: #6064f4;
+}
+
+.text-blue {
+    color: #4859dd;
+}
 
 
 /* debug */
 .flex_height_300 {
-    height: 300px;
+    min-height: 300px;
 }
 
 .flex_height_600 {
-    height: 600px;
+    min-height: 600px;
 }
 
 .flex_height_100 {
-    height: 100%;
+    min-height: 100%;
 }
 
 .flex_height_140 {
-    height: 140px;
+    min-height: 140px;
 }
 
-.debug .item {
+/* .debug .item {
     border: 2px dotted black;
-}
+} */
