@@ -22,10 +22,19 @@ a, link {
     margin-top: 120px;
 }
 
+.flex-wrap {
+    flex-wrap:wrap;
+}
+
+.title-fontsize {
+    font-size: 60px;
+    font-weight: 900;
+}
+
 .bg-jumbo {
     background-image: url('../img/jumbo.png');
     background-size: cover;
-    min-height: 600px;
+    min-height: 700px;
     color: white;
 }
 
@@ -49,10 +58,6 @@ nav>a.item {
     align-items: center;
 }
 
-.bg-jumbo .container {
-    height: 100px;
-}
-
 nav>div.item{
     position: absolute;
     left: 0;
@@ -72,24 +77,41 @@ nav> div>img {
     height: 50px;
 }
 
+.self-align {
+    align-self: center;
+}
+
 .justify-center {
     justify-content: center;
 }
 
-.buttons-header{
-    justify-content: center;
-    gap: 20px;
+.max-width-700 {
+    max-width: 700px;
 }
 
-section.container>div.row>button.item{
+.fontsize-paragraph {
+    font-size: 25px;
+}
+
+.buttons-header-min-width>button {
+    min-width: 200px;
+}
+
+.button-dark-gray {
+    background-color: #28242c;
+    color: white;
+}
+
+.buttons-header{
     display: flex;
-    align-items: center;
     right: 0;
     line-height: 24px;
-    padding: 7px 16px;
-    font-size: 14px;
-    font-weight: 700;
+    padding: 7px 50px;
+    font-size: 20px;
     border-radius: 40px;
+    gap: 20px;
+    min-height: 50px;
+    align-items: center;
 }
 
 /* main */
