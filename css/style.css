@@ -17,6 +17,10 @@ a, link {
     color: white;
 }
 
+option {
+    border: 0;
+}
+
 /* header */
 
 .margintop-120 {
@@ -197,7 +201,8 @@ nav> div>img {
 select {
     -webkit-appearance: none;
     background-color: transparent;
-    border: none;
+    border: 0;
+    background: #23272a;
 }
 
 .height-20px {
