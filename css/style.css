@@ -80,6 +80,16 @@ nav>button.item{
     margin-left: 200px;
 }
 
+.flex-footer>button.item{
+    line-height: 24px;
+    padding: 7px 16px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 40px;
+    background-color: #4859dd;
+    color: white;
+}
+
 nav>a.item {
     margin: 0 20px;
     align-items: center;
@@ -205,6 +215,10 @@ nav> div>img {
 .flex-footer {
     justify-content: space-between;
     align-items: center;
+}
+
+.flex-footer>div.item{
+    width: 100px;
 }
 
 select {
