@@ -55,7 +55,8 @@ option {
 .bg-jumbo {
     background-image: url('../img/jumbo.png');
     background-size: cover;
-    min-height: 700px;
+    max-height: 700px;
+    padding-bottom: 100px;
     color: white;
 }
 
@@ -65,17 +66,18 @@ option {
 
 nav.row{
     justify-content: center;
-    position: relative;
+    /* position: relative; */
 }
 
 nav>button.item{
-    position: absolute;
-    right: 0;
+    /* position: absolute; */
+    /* right: 0; */
     line-height: 24px;
     padding: 7px 16px;
     font-size: 14px;
     font-weight: 700;
     border-radius: 40px;
+    margin-left: 200px;
 }
 
 nav>a.item {
@@ -84,13 +86,13 @@ nav>a.item {
 }
 
 nav>div.item{
-    position: absolute;
-    left: 0;
+    /* position: absolute; */
+    /* left: 0; */
+    margin-right: 200px;
 }
 
 nav> a.item {
     line-height: 50px;
-    min-height: 50px;
 }
 
 .item {
@@ -99,7 +101,8 @@ nav> a.item {
 
 nav> div>img {
     align-self: center;
-    min-height: 50px;
+    width: 150px;
+    display: inline-block;
 }
 
 .self-align {
@@ -122,9 +125,10 @@ nav> div>img {
     font-size: 25px;
 }
 
-.buttons-header-min-width>button {
-    min-width: 200px;
+.buttons-header-gap {
+    gap: 20px;
 }
+    
 
 .button-dark-gray {
     background-color: #28242c;
@@ -132,14 +136,13 @@ nav> div>img {
 }
 
 .buttons-header{
+    min-width: 200px;  
+    gap: 20px;
     display: flex;
-    right: 0;
-    line-height: 24px;
     padding: 7px 50px;
     font-size: 20px;
     border-radius: 40px;
-    gap: 20px;
-    min-height: 50px;
+    line-height: 35px;
     align-items: center;
 }
 
@@ -149,6 +152,12 @@ nav> div>img {
     margin: 0 auto;
     max-width: 1200px;
     padding: 10px;
+}
+
+.container-main {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
 }
 
 .max-width{
@@ -199,9 +208,6 @@ nav> div>img {
 }
 
 select {
-    -webkit-appearance: none;
-    background-color: transparent;
-    border: 0;
     background: #23272a;
 }
 
@@ -212,6 +218,8 @@ select {
 .margin-left-5px {
     margin-left: 5px;
 }
+
+
 
 /* utility */
 .bg-azure {
@@ -244,7 +252,7 @@ select {
 
 
 /* debug */
-.flex_height_300 {
+/* .flex_height_300 {
     min-height: 300px;
 }
 
@@ -258,7 +266,7 @@ select {
 
 .flex_height_140 {
     min-height: 140px;
-}
+} */
 
 /* .debug .item {
     border: 2px dotted black;
